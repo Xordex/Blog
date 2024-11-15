@@ -16,7 +16,7 @@ export default function Setting() {
                     <div className="settingsPP">
                         <img src={SetImg} alt="" />
                         <label htmlFor="fileInput">
-                            <FaUser />
+                            <FaUser className='settingsPPIcon' />
                         </label>
                         <input type="file" id='fileInput' />
                     </div>

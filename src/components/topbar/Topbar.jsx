@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
 import womanImage from '../../assets/woman.jpg'
+import { Link } from 'react-router-dom';
 
 export default function Topbar() {
     return (
@@ -17,15 +18,15 @@ export default function Topbar() {
             </div>
             <div className="topCenter">
                 <ul className="topList">
-                    <li className='topListItem'>Home</li>
+                    <Link to='/'><li className='topListItem'>Home</li></Link>
                     <li className='topListItem'>About</li>
                     <li className='topListItem'>Contact</li>
-                    <li className='topListItem'>Write</li>
-                    <li className='topListItem'>Logout</li>
+                    <Link to='/write'><li className='topListItem'>Write</li></Link>
+                    <Link to="/login"><li className='topListItem'>Login</li></Link>
                 </ul>
             </div>
             <div className="topRight">
-                <img src={womanImage} alt="woman" className='topImg' />
+                <Link to='/register'><img src={womanImage} alt="woman" className='topImg' /></Link>
                 <FaSearch className='topSearchIcon' />
             </div>
         </div>
