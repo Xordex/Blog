@@ -4,3 +4,7 @@
     flex-wrap: wrap;
     margin: 20px;
 }
+
+.posts a {
+    text-decoration: none;
+}

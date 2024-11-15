@@ -19,14 +19,13 @@ export default function Topbar() {
             <div className="topCenter">
                 <ul className="topList">
                     <Link to='/'><li className='topListItem'>Home</li></Link>
-                    <li className='topListItem'>About</li>
-                    <li className='topListItem'>Contact</li>
-                    <Link to='/write'><li className='topListItem'>Write</li></Link>
+                    <Link to='/register'><li className='topListItem'>Register</li></Link>
+                    <Link to='/write'><li className='topListItem'>Write new</li></Link>
                     <Link to="/login"><li className='topListItem'>Login</li></Link>
                 </ul>
             </div>
             <div className="topRight">
-                <Link to='/register'><img src={womanImage} alt="woman" className='topImg' /></Link>
+                <Link to='/setting'><img src={womanImage} alt="woman" className='topImg' /></Link>
                 <FaSearch className='topSearchIcon' />
             </div>
         </div>
