@@ -1,0 +1,27 @@
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
+.searchform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 5vh 0 8vh;
+}
+
+.searchform input {
+    padding: 10px;
+    width: 25vw;
+}
+
+.searchform svg {
+    font-size: 20px;
+}

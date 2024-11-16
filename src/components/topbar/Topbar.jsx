@@ -25,7 +25,7 @@ export default function Topbar() {
             </div>
             <div className="topRight">
                 <Link to='/setting'><img src={womanImage} alt="woman" className='topImg' /></Link>
-                <FaSearch className='topSearchIcon' />
+                <Link to="search"><FaSearch className='topSearchIcon' /></Link>
             </div>
         </div>
     )

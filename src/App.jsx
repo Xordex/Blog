@@ -6,6 +6,7 @@ import Setting from "./pages/setting/Setting"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register"
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Search from "./pages/search/search"
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="write" element={<Write />} />
           <Route path="post/:postId" element={<Single />} />
           <Route path="setting" element={<Setting />} />
+          <Route path="search" element={<Search />} />
         </Routes>
       </Router>
     </>

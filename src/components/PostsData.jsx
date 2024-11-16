@@ -32,7 +32,7 @@ let post3 = {
     ID: 3
 }
 let post4 = {
-    title: "Czy ekologiczne podróże są możliwe?",
+    title: "Czy ekologiczne podróże są możliwe w życiu?",
     date: "3 tygodnie temu",
     content: ["Podróże mogą być bardziej ekologiczne, jeśli zdecydujemy się na środki transportu o niższym śladzie węglowym, takie jak pociągi czy rowery. Zmniejszenie liczby lotów i wybieranie lokalnych miejsc wypoczynku to również kroki w stronę bardziej zrównoważonego podróżowania.",
         "Planowanie podróży z myślą o środowisku obejmuje także wybór miejsc, które wspierają lokalną społeczność i ekologiczne praktyki. Dzięki temu możemy cieszyć się odkrywaniem świata, jednocześnie dbając o jego przyszłość."],
