@@ -1,5 +1,6 @@
 .settings {
     display: flex;
+    margin: 0 12vw;
 }
 
 .settingsWrapper {

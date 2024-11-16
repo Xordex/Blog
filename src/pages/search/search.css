@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    margin: 0 12vw;
 }
 
 .posts a {
