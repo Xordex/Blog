@@ -28,10 +28,9 @@ export default function SinglePost() {
                     <span className='singlePostAuthor'>Autor: <b>Michał Jaroch</b></span>
                     <span className='singlePostDate'>{SearchedPost.date}</span>
                 </div>
-                <p className='singlePostDesc'>
-                    {SearchedPost.content}
-                </p>
+                {SearchedPost.content.map(e => <p className='singlePostDesc' key={e}>{e}</p>)}
             </div>
         </div>
     )
 }
+

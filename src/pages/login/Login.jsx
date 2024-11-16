@@ -4,14 +4,14 @@ import './login.css';
 export default function Login() {
     return (
         <div className='login'>
-            <span className='loginTitle'>Login</span>
+            <span className='loginTitle'>Logowanie</span>
             <form className='loginForm'>
                 <label>Email</label>
-                <input type="text" className='loginInput' placeholder='Enter Your Email...' />
-                <label>Password</label>
-                <input type="password" className='loginInput' placeholder='Enter Your Password...' />
-                <button className="loginButton">Login</button>
-                <Link to="/register"><button className="loginRegisterButton">Register</button></Link>
+                <input type="text" className='loginInput' placeholder='Wpisz Email...' />
+                <label>Hasło</label>
+                <input type="password" className='loginInput' placeholder='Wpisz Hasło...' />
+                <button className="loginButton">Zaloguj</button>
+                <Link to="/register"><button className="loginRegisterButton">Rejestracja</button></Link>
             </form>
         </div>
     )

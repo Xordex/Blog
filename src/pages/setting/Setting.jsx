@@ -8,11 +8,11 @@ export default function Setting() {
         <div className='settings'>
             <div className="settingsWrapper">
                 <div className="settingsTitle">
-                    <span className="settingsUpdateTitle">Update Your Account</span>
-                    <span className="settingsDeleteTitle">Delete Account</span>
+                    <span className="settingsUpdateTitle">Zaktualizuj dane konta</span>
+                    <span className="settingsDeleteTitle">Usuń konto</span>
                 </div>
                 <form className="settingsForm">
-                    <label>Profile Picture</label>
+                    <label>Zdjęcie profilowe</label>
                     <div className="settingsPP">
                         <img src={SetImg} alt="" />
                         <label htmlFor="fileInput">
@@ -20,13 +20,13 @@ export default function Setting() {
                         </label>
                         <input type="file" id='fileInput' />
                     </div>
-                    <label>Username</label>
-                    <input type="text" placeholder='Michael' />
+                    <label>Imię</label>
+                    <input type="text" placeholder='Michał' />
                     <label>Email</label>
                     <input type="email" placeholder='kontakt@michaljaroch.pl' />
-                    <label>Password</label>
-                    <input type="password" />
-                    <button className="settingsSubmit">Update</button>
+                    <label>Hasło</label>
+                    <input type="password" placeholder='********' />
+                    <button className="settingsSubmit">Zapisz</button>
                 </form>
             </div>
             <Sidebar />

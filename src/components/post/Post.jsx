@@ -23,7 +23,7 @@ export default function Post({ art, title, date, categories, content }) {
                 <hr />
                 <span className="postDate">{date}</span>
             </div>
-            <p className='postDesc'>{content}</p>
+            <p className="postDesc">{content[0]}</p>
         </div>
     )
 
