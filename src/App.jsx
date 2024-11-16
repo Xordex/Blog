@@ -11,7 +11,6 @@ function App() {
 
   return (
     <>
-
       <Router>
         <Topbar />
         <Routes>
@@ -19,7 +18,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="write" element={<Write />} />
-          <Route path="single" element={<Single />} />
+          <Route path="post/:postId" element={<Single />} />
           <Route path="setting" element={<Setting />} />
         </Routes>
       </Router>

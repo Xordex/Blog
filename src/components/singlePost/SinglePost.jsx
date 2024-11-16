@@ -1,30 +1,35 @@
 import './singlepost.css'
-import mainImg from '../../assets/article/art1.jpg';
 import { FaEdit } from "react-icons/fa";
 import { FaTrash } from "react-icons/fa";
+import { Link, useParams } from 'react-router-dom';
+import { PostsData } from '../PostsData';
 
 export default function SinglePost() {
+    const { postId } = useParams();
+    let SearchedPost = {};
+    PostsData.posts.map(post => {
+        if (post.ID == postId) {
+            SearchedPost = post;
+        }
+    })
+
     return (
         <div className='singlePost'>
             <div className="singlePostWrapper">
-                <img className='singlePostImg' src={mainImg} alt="" />
+                <img className='singlePostImg' src={SearchedPost.image} alt="" />
                 <h1 className="singlePostTitle">
-                    Lorem impsum sorelr herter gher
+                    {SearchedPost.title}
                     <div className="singlePostEdit">
                         <FaEdit className='singlePostIcon' />
-                        <FaTrash className='singlePostIcon' />
+                        <Link to="/"><FaTrash className='singlePostIcon' onClick={() => PostsData.delete(postId)} /></Link>
                     </div>
                 </h1>
                 <div className="singlePostInfo">
-                    <span className='singlePostAuthor'>Author: <b>Michael</b></span>
-                    <span className='singlePostDate'>1 hour ago</span>
+                    <span className='singlePostAuthor'>Autor: <b>Michał Jaroch</b></span>
+                    <span className='singlePostDate'>{SearchedPost.date}</span>
                 </div>
                 <p className='singlePostDesc'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum esse error odio ipsa amet reiciendis! Itaque assumenda commodi non odio modi repellendus odit iusto officiis exercitationem, accusamus at sint!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum esse error odio ipsa amet reiciendis! Itaque assumenda commodi non odio modi repellendus odit iusto officiis exercitationem, accusamus at sint!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum esse error odio ipsa amet reiciendis! Itaque assumenda commodi non odio modi repellendus odit iusto officiis exercitationem, accusamus at sint!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum esse error odio ipsa amet reiciendis! Itaque assumenda commodi non odio modi repellendus odit iusto officiis exercitationem, accusamus at sint!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cum esse error odio ipsa amet reiciendis! Itaque assumenda commodi non odio modi repellendus odit iusto officiis exercitationem, accusamus at sint!
+                    {SearchedPost.content}
                 </p>
             </div>
         </div>

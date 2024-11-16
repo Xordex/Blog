@@ -1,20 +1,30 @@
 import './post.css';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
-export default function Post({ art, title }) {
+export default function Post({ art, title, date, categories, content }) {
+    Post.propTypes = {
+        categories: PropTypes.any,
+        art: PropTypes.any,
+        title: PropTypes.any,
+        date: PropTypes.any,
+        content: PropTypes.any
+    };
+
     return (
         <div className='post'>
             <img src={art} alt="" className='postImg' />
             <div className="postInfo">
                 <div className="postCats">
-                    <span className="postCat">Music</span>
-                    <span className="postCat">Life</span>
+                    {categories.map(e => {
+                        return <span className="postCat" key={e}>{e}</span>
+                    })}
                 </div>
                 <span className="postTitle">{title}</span>
                 <hr />
-                <span className="postDate">1 hour ago</span>
+                <span className="postDate">{date}</span>
             </div>
-            <p className='postDesc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem explicabo blanditiis doloremque necessitatibus assumenda pariatur cumque dolore. Numquam consectetur, odio qui tempora ad iure dolore ipsum dolor ullam reiciendis. Ullam!</p>
+            <p className='postDesc'>{content}</p>
         </div>
     )
+
 }
