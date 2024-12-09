@@ -21,6 +21,7 @@ export default function Topbar() {
                     <Link to='/'><li className='topListItem'>Strona główna</li></Link>
                     <Link to='/write'><li className='topListItem'>Dodaj wpis</li></Link>
                     <Link to="/login"><li className='topListItem'>Logowanie</li></Link>
+                    <Link to="/search"><li className='topListItem'>Wyszukiwarka</li></Link>
                 </ul>
             </div>
             <div className="topRight">

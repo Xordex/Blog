@@ -24,7 +24,7 @@ export default function Search() {
                 <input type="text" placeholder='Czego szukasz?' ref={inputSearch} autoFocus />
                 <FaSearch onClick={SearchAlg} />
             </div>
-            <div className='posts'>
+            <div className='posts-search'>
                 {Results.map(onepost => {
                     if (onepost.ID) {
                         console.log(onepost);

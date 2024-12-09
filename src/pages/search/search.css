@@ -1,4 +1,4 @@
-.posts {
+.posts-search {
     flex: 9;
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +6,7 @@
     margin: 0 12vw;
 }
 
-.posts a {
+.posts-search a {
     text-decoration: none;
 }
 
